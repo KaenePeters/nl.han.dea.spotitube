@@ -3,8 +3,8 @@ package nl.han.dea;
 public class UserDTO {
 
 
-    public String user = "meron";
-    public String password = "MySuperSecretPassword12341";
+    private String user = "Kaene Peters";
+    private String password = "MySuperSecretPassword12341";
 
     public UserDTO() {
     }

@@ -2,8 +2,8 @@ package nl.han.dea;
 
 public class TokenDTO {
 
-    public String token;
-    public String user;
+    private String token;
+    private String user;
 
     public TokenDTO() {
     }
