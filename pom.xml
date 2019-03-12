@@ -7,15 +7,13 @@
   <groupId>nl.han.dea</groupId>
   <artifactId>spotitube</artifactId>
   <version>0.1</version>
+  <packaging>war</packaging>
 
   <name>spotitube</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
   </properties>
 
 
@@ -29,10 +27,15 @@
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
-      <version>7.0</version>
+      <version>8.0</version>
       <scope>provided</scope>
     </dependency>
-
+    <dependency>
+      <groupId>com.airhacks</groupId>
+      <artifactId>jaxrs-cors</artifactId>
+      <version>0.0.1</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 
   <build>
