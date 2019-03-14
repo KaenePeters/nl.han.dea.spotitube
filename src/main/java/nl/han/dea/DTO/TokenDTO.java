@@ -1,4 +1,4 @@
-package nl.han.dea;
+package nl.han.dea.DTO;
 
 public class TokenDTO {
 

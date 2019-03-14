@@ -1,11 +1,11 @@
 package nl.han.dea.resources;
 
-public class ErrorDTO {
+public class ErrorMessage {
 
     private String code;
     private String message;
 
-    public ErrorDTO(String code, String message) {
+    public ErrorMessage(String code, String message) {
         this.code = code;
         this.message = message;
     }

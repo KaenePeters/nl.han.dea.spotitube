@@ -1,10 +1,11 @@
-package nl.han.dea;
+package nl.han.dea.DTO;
 
 public class UserDTO {
 
 
     private String user = "Kaene Peters";
     private String password = "MySuperSecretPassword12341";
+    private String name;
 
     public UserDTO() {
     }
@@ -30,6 +31,13 @@ public class UserDTO {
         this.password = password;
     }
 
+    public String getName(String name) {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+
+    }
 }
 
