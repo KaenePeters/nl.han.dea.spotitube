@@ -1,43 +1,62 @@
 //package nl.han.dea.resources;
 //
+//import nl.han.dea.DTO.ErrorDTO;
 //import nl.han.dea.DTO.TokenDTO;
 //import nl.han.dea.DTO.UserDTO;
+//import nl.han.dea.persistence.UserDAO;
 //import org.junit.Test;
-//import org.junit.jupiter.api.BeforeEach;
+//import org.junit.jupiter.api.extension.ExtendWith;
+//import org.mockito.InjectMocks;
+//import org.mockito.Mock;
+//import org.mockito.Mockito;
+//import org.mockito.junit.jupiter.MockitoExtension;
 //
 //import javax.ws.rs.core.Response;
+//import java.util.UUID;
 //
 //import static org.junit.jupiter.api.Assertions.assertEquals;
 //
+//@ExtendWith(MockitoExtension.class)
 //public class LoginResourceTest {
 //
+//    @Mock
+//    private UserDAO userDAOStub;
+//
+//    @InjectMocks
 //    private LoginResource sut;
 //
-//    @BeforeEach
-//    void setUp() {
-//        sut = new LoginResource();
-//    }
 //
 //    @Test
-//    public void loginTry() {
-//        UserDTO userDTO = new UserDTO();
+//    public void loginSucces() {
 //
-//        Response actualResult = sut.loginSucces(userDTO);
+//        UserDTO mockedUser = new UserDTO();
+//        mockedUser.setName("Testuser");
+//        mockedUser.setPassword("testpassword");
+//        mockedUser.setUser("testuser");
+//        Mockito.when(userDAOStub.getUser("testuser", "testpassword")).thenReturn(mockedUser);
+//
+//        UserDTO userDTO = new UserDTO("testuser", "testpassword");
+//        Response actualResult = sut.login(userDTO);
+//
 //        assertEquals(Response.Status.OK.getStatusCode(), actualResult.getStatus());
-//
 //        TokenDTO actualToken = (TokenDTO) actualResult.getEntity();
-//        assertEquals("Kaene Peters", actualToken.getUser());
+//        assertEquals("Test Testuser", actualToken.getUser());
 //        assertEquals("1234", actualToken.getToken());
 //    }
 //
 //    @Test
-//    void loginFailure() {
-//        UserDTO wrongUserDto = new UserDTO("Kaene Peters", "12354");
-//        Response actualResult = sut.loginFailure(wrongUserDto);
-//        assertEquals(401,actualResult.getStatus());
+//    public void loginFailure() {
+//        UserDTO userDTO = new UserDTO("kaene", "12354");
 //
-//        TokenDTO wrongTokenDto2 = new TokenDTO("12345","Kaene Pters");
-//        Response actualResult2 = sut.loginFailure();
-//        assertEquals(403,actualResult2);
+//        Response actualResult = sut.loginFailure(userDTO);
+//        assertEquals(Response.Status.UNAUTHORIZED.getStatusCode(), actualResult.getStatus());
+//
+//        ErrorDTO actualDTO = (ErrorDTO) actualResult.getEntity();
+//        assertEquals("Login failed for user kaene", actualDTO.getMessage());
+//    }
+//
+//    @Test
+//    public void generateUUID() {
+//        System.out.println(UUID.randomUUID());
 //    }
 //}
