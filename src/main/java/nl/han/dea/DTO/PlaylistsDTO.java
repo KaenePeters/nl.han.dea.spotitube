@@ -1,32 +1,28 @@
 package nl.han.dea.DTO;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.util.ArrayList;
-import java.util.List;
 
-@Path("/playlists")
+import java.util.ArrayList;
+
 public class PlaylistsDTO {
-    private List<Playlist> playlists = new ArrayList<Playlist>();
+    private ArrayList<Playlist> playlists;
+    private int length;
 
     public PlaylistsDTO() {
-
-        Playlist playlist1 = new Playlist("test", true, 120, null);
-        playlists.add(playlist1);
-        Playlist playlist2 = new Playlist("test", true, 120, null);
-        playlists.add(playlist2);
     }
 
-    @GET
-    @Path("/playlists")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getPlaylists(@PathParam("playlists") TokenDTO token) {
-        return null;
+    public ArrayList<Playlist> getPlaylists() {
+        return playlists;
     }
 
+    public void setPlaylists(ArrayList<Playlist> playlists) {
+        this.playlists = playlists;
+    }
 
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
 }

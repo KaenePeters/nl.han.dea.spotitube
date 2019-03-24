@@ -3,9 +3,9 @@ package nl.han.dea.DTO;
 public class UserDTO {
 
 
-    private String user = "Kaene Peters";
-    private String password = "MySuperSecretPassword12341";
-    private String name;
+    private String user = "kaene";
+    private String password = "kaene1234";
+    private String name = "Kaene Peters";
 
     public UserDTO() {
     }
@@ -38,6 +38,10 @@ public class UserDTO {
     public void setName(String name) {
         this.name = name;
 
+    }
+
+    public String getName() {
+        return name;
     }
 }
 

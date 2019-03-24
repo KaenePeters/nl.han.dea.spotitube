@@ -4,6 +4,7 @@
 //import nl.han.dea.DTO.TokenDTO;
 //import nl.han.dea.DTO.UserDTO;
 //import nl.han.dea.persistence.UserDAO;
+//import nl.han.dea.util.TokenGenerator;
 //import org.junit.Test;
 //import org.junit.jupiter.api.extension.ExtendWith;
 //import org.mockito.InjectMocks;
@@ -21,13 +22,14 @@
 //
 //    @Mock
 //    private UserDAO userDAOStub;
+//    private TokenGenerator tokenGenerator;
 //
 //    @InjectMocks
 //    private LoginResource sut;
 //
 //
 //    @Test
-//    public void loginSucces() {
+//    public void login() {
 //
 //        UserDTO mockedUser = new UserDTO();
 //        mockedUser.setName("Testuser");
@@ -35,10 +37,13 @@
 //        mockedUser.setUser("testuser");
 //        Mockito.when(userDAOStub.getUser("testuser", "testpassword")).thenReturn(mockedUser);
 //
+//        Mockito.when(tokenGenerator.generateUUID()).thenReturn("1234");
+//
 //        UserDTO userDTO = new UserDTO("testuser", "testpassword");
 //        Response actualResult = sut.login(userDTO);
 //
 //        assertEquals(Response.Status.OK.getStatusCode(), actualResult.getStatus());
+//
 //        TokenDTO actualToken = (TokenDTO) actualResult.getEntity();
 //        assertEquals("Test Testuser", actualToken.getUser());
 //        assertEquals("1234", actualToken.getToken());

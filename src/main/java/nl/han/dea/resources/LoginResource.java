@@ -21,11 +21,10 @@ public class LoginResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response login(UserDTO user) {
-
-        UserDTO authenticatedUser = userDAO.getUser(user.getUser(), user.getPassword());
-
+        UserDTO authenticatedUser = null;
+        authenticatedUser = userDAO.getUser(user.getUser(), user.getPassword());
         if (authenticatedUser != null) {
-            return Response.ok(new TokenDTO("1234", "kaene")).build();
+            return Response.ok(new TokenDTO("1234", authenticatedUser.getName())).build();
         } else {
             return loginFailure(authenticatedUser);
         }

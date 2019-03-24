@@ -1,32 +1,54 @@
 package nl.han.dea.DTO;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Playlist {
 
+    private int id;
     private String name;
     private boolean owner;
-    private int length;
+    private ArrayList<TrackDTO> tracks;
 
-    private List<TrackDTO> tracks = new ArrayList<TrackDTO>();
+    //    public Playlist(String name, boolean owner, ArrayList<TrackDTO> tracks) {
+//        this.name = name;
+//        this.owner = owner;;
+//        this.tracks = tracks;
+//    }
+    public int getId() {
+        return this.id;
+    }
 
-    public Playlist(String name, boolean owner, int length, List<TrackDTO> tracks) {
-        this.name = name;
+    public void setId(int id) {
+    }
+
+    public Playlist getPlaylist() {
+        return this;
+    }
+
+    public boolean isOwner() {
+        return owner;
+    }
+
+    public void setOwner(boolean owner) {
         this.owner = owner;
-        this.length = length;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ArrayList<TrackDTO> getTracks() {
+        return tracks;
+    }
+
+    public void setTrack(ArrayList<TrackDTO> tracks) {
         this.tracks = tracks;
     }
 
-    public void setTrack(TrackDTO track) {
-        tracks.add(track);
-    }
-    public Playlist getPlaylist(){
-        return this;
-    }
-    public int getLength(){
-        return this.length;
-    }
 
 }
 

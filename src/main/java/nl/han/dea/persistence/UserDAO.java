@@ -9,20 +9,19 @@ import java.sql.SQLException;
 
 public class UserDAO {
 
-    public UserDTO getUser(String username, String password) {
-        UserDTO foundUser= null;
+    public UserDTO getUser(String user, String password) {
+        UserDTO foundUser = null;
         try (
-            Connection connection = new ConnectionFactory().getConnecion();
-            PreparedStatement preparedStatement= connection.prepareStatement("SELECT");
-
-        ){
-            preparedStatement.setString(1,username);
-            preparedStatement.setString(2,password);
+                Connection connection = new ConnectionFactory().getConnecion();
+                PreparedStatement preparedStatement = connection.prepareStatement("SELECT account.user, account.password, account.name from account where user = ? and password = ?");
+        ) {
+            preparedStatement.setString(1, user);
+            preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
-            if(resultSet.next()){
+            if (resultSet.next()) {
                 foundUser = new UserDTO();
                 foundUser.setName(resultSet.getString("name"));
-                foundUser.setUser(username);
+                foundUser.setUser(user);
                 foundUser.setPassword(password);
 
             }
