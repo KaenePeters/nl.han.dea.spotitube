@@ -1,36 +1,40 @@
 package nl.han.dea.resources;
 
-import nl.han.dea.DTO.Playlist;
-import nl.han.dea.DTO.PlaylistsDTO;
-import nl.han.dea.persistence.PlaylistDao;
+import nl.han.dea.service.PlaylistService;
+import nl.han.dea.service.PlaylistTracksService;
+import nl.han.dea.service.TokenService;
+
+import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.ArrayList;
 
-@Path("playlists")
+@Path("/playlists")
 public class PlaylistResource {
+    private PlaylistService playlistService;
+    private PlaylistTracksService playlistTracksService;
+    private TokenService tokenService;
 
-    private PlaylistDao playlistDao = new PlaylistDao();
 
     public PlaylistResource() {
+    }
+
+    @Inject
+    public PlaylistResource(PlaylistService playlistService, PlaylistTracksService playlistTracksService, TokenService tokenService) {
+        this.playlistService = playlistService;
+        this.playlistTracksService = playlistTracksService;
+        this.tokenService = tokenService;
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getPlaylists(@QueryParam("token") String token) {
-        ArrayList<Playlist> playlists = playlistDao.playlists(token);
+        //  tokenService.validateToken(token);
+        return Response.ok(playlistService.getPlaylistsDTO("kaene")).build();
 
-        if (playlists.get(0) == null) {
-            return Response.status(403).build();
-        }
-        PlaylistsDTO response = new PlaylistsDTO();
-        response.setPlaylists(playlists);
-        response.setLength(11111);
-
-        return Response.ok().entity(response).build();
+        //tokenService.getUserWithToken(token))
     }
 }

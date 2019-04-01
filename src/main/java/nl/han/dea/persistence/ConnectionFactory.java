@@ -45,9 +45,9 @@ public class ConnectionFactory {
             return DriverManager.getConnection(
                     properties.getProperty("db.url"),
                     properties.getProperty("db.user"),
-                    properties.getProperty(DB_PASSWORD));
+                    DB_PASSWORD);
         } catch (SQLException e) {
-            throw new SpotitubePersistenceException(e);
+            throw new RuntimeException(e);
         }
     }
 

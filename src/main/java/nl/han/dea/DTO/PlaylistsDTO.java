@@ -1,28 +1,28 @@
 package nl.han.dea.DTO;
 
-
-import java.util.ArrayList;
+import java.util.List;
 
 public class PlaylistsDTO {
-    private ArrayList<Playlist> playlists;
-    private int length;
 
-    public PlaylistsDTO() {
-    }
+    private List<Playlist> playlists;
 
-    public ArrayList<Playlist> getPlaylists() {
-        return playlists;
-    }
 
-    public void setPlaylists(ArrayList<Playlist> playlists) {
+    public PlaylistsDTO(List<Playlist> playlists) {
         this.playlists = playlists;
     }
 
-    public int getLength() {
-        return length;
+    public List<Playlist> getPlaylists() {
+        return playlists;
     }
 
-    public void setLength(int length) {
-        this.length = length;
-    }
+
+//    public int getLength() {
+//        int length = 0;
+//        for (Playlist playlist : playlists) {
+//            length += playlist.getLength();
+//
+//        }
+//        return length;
+//    }
+
 }

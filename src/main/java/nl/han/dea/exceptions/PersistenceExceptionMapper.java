@@ -1,7 +1,6 @@
-package nl.han.dea.resources;
+package nl.han.dea.exceptions;
 
 import nl.han.dea.DTO.ErrorDTO;
-import nl.han.dea.persistence.SpotitubePersistenceException;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
