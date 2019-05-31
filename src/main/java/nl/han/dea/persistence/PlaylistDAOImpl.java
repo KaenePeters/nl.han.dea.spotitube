@@ -1,11 +1,9 @@
 package nl.han.dea.persistence;
 
-import nl.han.dea.DTO.Playlist;
+import nl.han.dea.DTO.PlaylistDTO;
 import nl.han.dea.DTO.PlaylistsDTO;
-import nl.han.dea.exceptions.ItemNotFoundException;
 
 import javax.enterprise.inject.Default;
-import javax.inject.Inject;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,65 +12,99 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Default
-public class PlaylistDAOImpl implements PlaylistDAO {
+public class PlaylistDAOImpl implements IPlaylistDAO {
 
-    private TrackDAO trackDAO;
 
     public PlaylistDAOImpl() {
 
     }
 
-    @Inject
-    public PlaylistDAOImpl(TrackDAO trackDAO) {
-        this.trackDAO = trackDAO;
-    }
 
     @Override
-    public List<Playlist> getAllPlayLists(String user) {
-        List<Playlist> playlists = new ArrayList<>();
+    public PlaylistsDTO getAllPlaylists(String username) {
+        PlaylistsDTO playlistsDTO = new PlaylistsDTO();
+        String query = "SELECT * FROM playlist WHERE owner=?";
         try (
                 Connection connection = new ConnectionFactory().getConnecion();
-                PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM playlist");
+                PreparedStatement preparedStatement = connection.prepareStatement(query)
         ) {
+            preparedStatement.setString(1, username);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                Playlist playlist = getPlaylistByID(resultSet.getInt("id"));
-                playlist.setOwner(user.equals(playlist.getUser()));
-                playlists.add(playlist);
+                PlaylistDTO playlistDTO = new PlaylistDTO();
+                playlistDTO.setId(resultSet.getInt("id"));
+                playlistDTO.setName(resultSet.getString("name"));
+                playlistDTO.setOwner(resultSet.getString("owner"), username);
+                playlistsDTO.setPlaylists(playlistDTO);
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return playlists;
+        return playlistsDTO;
     }
 
-    @Override
-    public PlaylistsDTO getPlaylistsDTO(String currentUser) {
-        return new PlaylistsDTO(getAllPlayLists(currentUser));
-    }
+
+
+
 
     @Override
-    public Playlist getPlaylistByID(int id) {
+    public void deletePlaylist(int playlistId) {
+        //eerst alle afhankelijke tabellen verwijderen
+        deleteFromPlaylistTracks(playlistId);
+        String query = "DELETE FROM playlist WHERE id = ?";
         try (
                 Connection connection = new ConnectionFactory().getConnecion();
-                PreparedStatement playlistStatement = connection.prepareStatement("SELECT * FROM playlist WHERE id = ?");
-                PreparedStatement playlist_TrackStatement = connection.prepareStatement("SELECT * FROM playlist_track WHERE playlistId = ?");
+                PreparedStatement preparedStatement = connection.prepareStatement(query)
         ) {
-            playlistStatement.setInt(1, id);
-            ResultSet playlistResultSet = playlistStatement.executeQuery();
-            if (playlistResultSet.next()) {
-                Playlist playlist = new Playlist();
-                playlist.setId(id);
-                playlist.setName(playlistResultSet.getString("name"));
-                playlist.setUser(playlistResultSet.getString("owner"));
-                playlist.setTracks(null);
-                return playlist;
-            }
-            throw new ItemNotFoundException("Playlist " + id + " not found");
+            preparedStatement.setInt(1, playlistId);
+            preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
+    }
 
+    @Override
+    public void addPlaylist(PlaylistDTO playlistDTO, String username) {
+        String query = "INSERT INTO playlist (name, owner) VALUES (?,?)";
+        try (
+                Connection connection = new ConnectionFactory().getConnecion();
+                PreparedStatement preparedStatement = connection.prepareStatement(query)
+        ) {
+            preparedStatement.setString(1, playlistDTO.getName());
+            preparedStatement.setString(2, username);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    @Override
+    public void editPlaylist(String name, int playlistId) {
+        String query = "UPDATE playlist SET name=? WHERE id=?";
+        try (
+                Connection connection = new ConnectionFactory().getConnecion();
+                PreparedStatement preparedStatement = connection.prepareStatement(query)
+        ) {
+            preparedStatement.setString(1, name);
+            preparedStatement.setInt(2, playlistId);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void deleteFromPlaylistTracks(int playlistId) {
+        String query = "DELETE FROM playlist_track WHERE playlistId=?";
+        try (
+                Connection connection = new ConnectionFactory().getConnecion();
+                PreparedStatement preparedStatement = connection.prepareStatement(query)
+        ) {
+            preparedStatement.setInt(1, playlistId);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

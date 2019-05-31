@@ -1,10 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spotitube:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c8a0830-218c-4f70-89f9-498c5ced0a83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="1c8a0830-218c-4f70-89f9-498c5ced0a83" name="Default Changelist" comment="Tests erbij gemaakt en login bijgewerkt niet af">
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TracksDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginExceptionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITrackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spotitube.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spotitube.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/Track.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITokenDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistTracksService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TokenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TokenServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/LoginResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/LoginResourceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,27 +51,218 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/spotitube$LoginResourceTest.ic" NAME="LoginResourceTest Coverage Results" MODIFIED="1552987470554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>nl.han.dea.resources.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="271" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spotitube@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spotitube@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spotitube@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spotitube: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spotitube@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spotitube: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="account: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spotitube@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spotitube: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="playlist: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spotitube@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spotitube: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="playlist_track: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spotitube@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spotitube: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="token: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="spotitube@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="spotitube: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="track: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="135">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="114" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="338">
+              <caret line="25" column="75" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITrackService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="cdi.beans_1_1" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>userDAO</find>
+      <find>getstat</find>
+      <find>unaut</find>
+      <find>length</find>
+      <find>get</find>
+      <find>getConnecion</find>
+      <find>driver</find>
+      <find>service</find>
+      <find>serv</find>
+      <find>currentUser</find>
+      <find>user</find>
+      <find>Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: org/apache/catalina/util/ServerInf</find>
+      <find>java.lang.no</find>
+      <find>next()</find>
+      <find>javax</find>
+      <find>mysql</find>
+      <find>fasterxml</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,10 +270,66 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeLoginException.java" />
+        <option value="44058b61-af45-4f4a-a346-9fce4938234b/schema/spotitube/table/track.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/SpotitubePersistenceException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubePersistenceException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/Playlist.java" />
+        <option value="44058b61-af45-4f4a-a346-9fce4938234b/schema/spotitube/table/account.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/InvalidTokenException.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/MariaDBConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TokenServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TokenService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/Track.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/DTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITokenService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ConnectionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITokenDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITrackService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TracksDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -53,11 +338,26 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spotitube" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spotitube" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="239" />
-    <option name="y" value="-13" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -65,8 +365,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -74,22 +372,181 @@
               <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
               <item name="spotitube" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="nl.han.dea.resources" />
+      <recent name="nl.han.dea" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="nl.han.dea.persistence" />
+      <recent name="nl.han.dea.exceptions" />
+      <recent name="nl.han.dea.service" />
+      <recent name="nl.han.dea.DTO" />
+      <recent name="nl.han.dea.resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kaene-laptop\javaOpdrachten\spotitube\src\main\webapp" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -103,6 +560,168 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="TomEE Server.TomEE 9.0.12">
+    <configuration name="All in spotitube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spotitube" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spotitube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.han.dea.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.han.dea.resources" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.LoginResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginResourceTest.generateUUID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spotitube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.han.dea.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.han.dea.resources" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.LoginResourceTest" />
+      <option name="METHOD_NAME" value="generateUUID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginResourceTest.loginFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spotitube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.han.dea.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.han.dea.resources" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.LoginResourceTest" />
+      <option name="METHOD_NAME" value="loginFailure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginResourceTest.loginSucces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spotitube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.han.dea.exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.han.dea.resources" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.LoginResourceTest" />
+      <option name="METHOD_NAME" value="loginSucces" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TomEE 9.0.12" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 9.0.12" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="spotitube:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_spotitube" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60639" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spotitube:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in spotitube" />
+      <item itemvalue="JUnit.LoginResourceTest" />
+      <item itemvalue="JUnit.LoginResourceTest.generateUUID" />
+      <item itemvalue="JUnit.LoginResourceTest.loginFailure" />
+      <item itemvalue="JUnit.LoginResourceTest.loginSucces" />
+      <item itemvalue="TomEE Server.TomEE 9.0.12" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in spotitube" />
+        <item itemvalue="JUnit.LoginResourceTest" />
+        <item itemvalue="JUnit.LoginResourceTest.loginFailure" />
+        <item itemvalue="JUnit.LoginResourceTest.generateUUID" />
+        <item itemvalue="JUnit.LoginResourceTest.loginSucces" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -114,59 +733,651 @@
       <option name="presentableId" value="Default" />
       <updated>1552301076884</updated>
       <workItem from="1552301080418" duration="360000" />
+      <workItem from="1552380062702" duration="8511000" />
+      <workItem from="1552471854847" duration="43000" />
+      <workItem from="1552472058470" duration="2151000" />
+      <workItem from="1552478238953" duration="146000" />
+      <workItem from="1552551078560" duration="10013000" />
+      <workItem from="1552899542989" duration="9242000" />
+      <workItem from="1552983299369" duration="7769000" />
+      <workItem from="1553159530991" duration="7028000" />
+      <workItem from="1553427069510" duration="14701000" />
+      <workItem from="1553501735343" duration="7208000" />
+      <workItem from="1553588317086" duration="8538000" />
+      <workItem from="1553613839593" duration="3761000" />
+      <workItem from="1553698869804" duration="882000" />
+      <workItem from="1553791007181" duration="7695000" />
+      <workItem from="1553955078457" duration="13995000" />
+      <workItem from="1554112575513" duration="1075000" />
+      <workItem from="1554113674253" duration="1961000" />
+      <workItem from="1554120102038" duration="16000" />
+      <workItem from="1554193571399" duration="1139000" />
+      <workItem from="1554195406389" duration="4188000" />
+      <workItem from="1554219777864" duration="599000" />
+      <workItem from="1554286073323" duration="640000" />
+      <workItem from="1554298406832" duration="12000" />
+      <workItem from="1557828188457" duration="66000" />
+      <workItem from="1559288982375" duration="17164000" />
     </task>
+    <task id="LOCAL-00001" summary="Login bijgewerkt niet af">
+      <created>1552385290859</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552385290860</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Tests erbij gemaakt en login bijgewerkt niet af">
+      <created>1552388737836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552388737836</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tests erbij gemaakt en login bijgewerkt niet af">
+      <created>1552561032660</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552561032660</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Playlists aangemaakt en wat eer dingen">
+      <created>1552909782120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552909782120</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Tests erbij gemaakt en login bijgewerkt niet af">
+      <created>1553434327652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553434327653</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tests erbij gemaakt en login bijgewerkt niet af">
+      <created>1554051833999</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554051833999</updated>
+    </task>
+    <task id="LOCAL-00007" summary="een hoop erbij">
+      <created>1554112671274</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554112671274</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="LoginResourceTest - 2019.03.18 at 11h 38m 08s.xml">
+      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginResourceTest - 2019.03.18 at 11h 42m 37s.xml">
+      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginResourceTest - 2019.03.18 at 11h 43m 44s.xml">
+      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginResourceTest - 2019.03.19 at 10h 25m 05s.xml">
+      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginResourceTest_loginFailure - 2019.03.19 at 10h 25m 57s.xml">
+      <configuration name="LoginResourceTest.loginFailure" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginResourceTest - 2019.03.19 at 10h 27m 55s.xml">
+      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginResourceTest - 2019.03.19 at 11h 15m 42s.xml">
+      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginResourceTest - 2019.03.21 at 10h 26m 15s.xml">
+      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_spotitube - 2019.03.28 at 22h 12m 52s.xml">
+      <configuration name="All in spotitube" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_spotitube - 2019.03.28 at 22h 14m 49s.xml">
+      <configuration name="All in spotitube" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360000" />
+    <option name="totallyTimeSpent" value="131652000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7710049" visible="true" weight="0.15138593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="JSF" />
-      <window_info anchor="right" id="Bean Validation" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="CDI" />
-      <window_info anchor="right" id="Database" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Web" order="5" sideWeight="0.22899505" side_tool="true" weight="0.15138593" />
+      <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946696" visible="true" weight="0.34236187" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.34236187" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32936078" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="17" weight="0.32936078" />
+      <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.20788912" />
+      <window_info anchor="right" id="Maven" order="5" sideWeight="0.49919224" visible="true" weight="0.13219616" />
+      <window_info anchor="right" id="JSF" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Bean Validation" order="7" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="CDI" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Mongo Explorer" order="11" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Login bijgewerkt niet af" />
+    <MESSAGE value="Playlists aangemaakt en wat eer dingen" />
+    <MESSAGE value="Tests erbij gemaakt en login bijgewerkt niet af" />
+    <MESSAGE value="een hoop erbij" />
+    <option name="LAST_COMMIT_MESSAGE" value="een hoop erbij" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/ItemNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="34">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/RuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+          <folding>
+            <element signature="e#1595#1596#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubePersistenceException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resources/LoginResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="69" selection-start-line="46" selection-end-line="46" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/spotitube-master/spotitube/src/main/java/nl/han/ica/oose/dea/dal/PlaylistDAO.java" />
+    <entry file="file://$USER_HOME$/Documents/spotitube-master/spotitube/src/main/java/nl/han/ica/oose/dea/dal/PlaylistsDAO.java" />
+    <entry file="das://44058b61-af45-4f4a-a346-9fce4938234b/schema/spotitube/table/account.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeLoginException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/InvalidTokenException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/MongoDBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/MariaDBConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" selection-start-column="2" selection-end-line="61" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TokenDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/TokenServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15.jar!/com/mysql/cj/protocol/Resultset.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/util/TokenGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar!/javax/ws/rs/core/MediaType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="68" lean-forward="true" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TracksDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITokenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITrackService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="25" column="75" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -176,6 +1387,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>spotitube:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -187,7 +1399,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web (spotitube)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -222,12 +1434,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spotitube</last-edited>
+          <last-edited>Web|spotitube</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -247,7 +1458,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.sun.mail:javax.mail:1.5.0</last-edited>
+          <last-edited>Maven: com.airhacks:jaxrs-cors:0.0.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

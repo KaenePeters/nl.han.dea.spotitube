@@ -17,7 +17,7 @@ public class Main {
                 "root", "");
              PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM ACCOUNT WHERE user = ?");
         ) {
-            //?useSSL=false achter de getConnection url;
+            //?useSSL=false achter de getConnecion url;
             preparedStatement.setString(1, "kaene");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {

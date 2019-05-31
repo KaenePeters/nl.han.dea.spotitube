@@ -1,8 +1,8 @@
 //package nl.han.dea.resources;
 //
-//import nl.han.dea.DTO.ErrorDTO;
-//import nl.han.dea.DTO.TokenDTO;
-//import nl.han.dea.DTO.UserDTO;
+//import nl.han.dea.TrackDTO.ErrorDTO;
+//import nl.han.dea.TrackDTO.TokenDTO;
+//import nl.han.dea.TrackDTO.UserDTO;
 //import nl.han.dea.persistence.UserDAO;
 //import nl.han.dea.util.TokenGenerator;
 //import org.junit.Test;

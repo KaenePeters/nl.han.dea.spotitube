@@ -5,7 +5,7 @@ import nl.han.dea.DTO.TokenDTO;
 import javax.enterprise.inject.Alternative;
 
 @Alternative
-public class LocalAuthenticationService implements AuthenticationService {
+public class LocalAuthenticationService implements IAuthenticationService {
 
     @Override
     public TokenDTO login(String username, String password) {

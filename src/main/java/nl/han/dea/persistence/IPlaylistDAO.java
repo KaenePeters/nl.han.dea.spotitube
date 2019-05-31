@@ -1,0 +1,17 @@
+package nl.han.dea.persistence;
+
+import nl.han.dea.DTO.PlaylistDTO;
+import nl.han.dea.DTO.PlaylistsDTO;
+
+
+
+public interface IPlaylistDAO {
+
+    PlaylistsDTO getAllPlaylists(String username);
+
+    void editPlaylist(String name, int playlistId);
+
+    void deletePlaylist(int playlistId);
+
+    void addPlaylist(PlaylistDTO playlistDTO, String username);
+}

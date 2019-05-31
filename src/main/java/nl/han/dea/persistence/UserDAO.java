@@ -2,12 +2,13 @@ package nl.han.dea.persistence;
 
 import nl.han.dea.DTO.UserDTO;
 
+import javax.enterprise.inject.Default;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-public class UserDAO {
+@Default
+public class UserDAO implements IUserDAO {
 
     public UserDTO getUser(String user, String password) {
         UserDTO foundUser = null;
