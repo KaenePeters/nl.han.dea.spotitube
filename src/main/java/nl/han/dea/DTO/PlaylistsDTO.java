@@ -5,26 +5,38 @@ import java.util.List;
 
 public class PlaylistsDTO {
 
-    private List<PlaylistDTO> playlistsDTO;
+    private List<PlaylistDTO> playlists;
     private int length;
 
+
     public PlaylistsDTO() {
-        playlistsDTO = new ArrayList<>();
+        playlists = new ArrayList<>();
     }
 
     public List<PlaylistDTO> getPlaylistsDTO() {
-        return playlistsDTO;
+        return playlists;
     }
 
-    public void setPlaylists(PlaylistDTO playlistDTO) {
-        playlistsDTO.add(playlistDTO);
+    public void setPlaylists(List<PlaylistDTO> playlists) {
+        this.playlists = playlists;
+    }
+
+    public int getLength() {
+        return length;
     }
 
     public void setLength(int length) {
         this.length = length;
     }
 
-    public int getLength() {
-        return length;
-    }
+
+//    @Override
+//    public String toString() {
+//        for (PlaylistDTO playlist : playlists)
+//        {
+//            playlist.getName();
+//
+//        }
+//        return ;
+//    }
 }

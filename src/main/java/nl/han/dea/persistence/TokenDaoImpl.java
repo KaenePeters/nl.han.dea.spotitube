@@ -5,12 +5,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 @Default
 public class TokenDaoImpl implements ITokenDAO {
 
     @Override
     public String tokenIsValid(String token) {
-        String query = "SELECT user FROM token WHERE token=?";
+        String query = "SELECT username FROM token WHERE token=?";
         try (
                 Connection connection = new ConnectionFactory().getConnecion();
                 PreparedStatement preparedStatement = connection.prepareStatement(query)
@@ -18,7 +19,7 @@ public class TokenDaoImpl implements ITokenDAO {
             preparedStatement.setString(1, token);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                return resultSet.getString("user");
+                return resultSet.getString("username");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -28,7 +29,7 @@ public class TokenDaoImpl implements ITokenDAO {
 
     @Override
     public String saveAndReturnNewToken(String username, String generateToken) {
-        String query = "insert into token (user, token) value (?,?)";
+        String query = "insert into token (username, token, expiredate) value (?,?,now() + interval 7 day)";
         try (
                 Connection connection = new ConnectionFactory().getConnecion();
                 PreparedStatement preparedStatement = connection.prepareStatement(query)

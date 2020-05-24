@@ -7,7 +7,7 @@ import nl.han.dea.DTO.PlaylistsDTO;
 
 public interface IPlaylistDAO {
 
-    PlaylistsDTO getAllPlaylists(String username);
+    PlaylistsDTO getPlaylists(String username);
 
     void editPlaylist(String name, int playlistId);
 

@@ -1,17 +1,22 @@
 package nl.han.dea.DTO;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PlaylistDTO {
-
     private int id;
     private String name;
-    private boolean isOwner;
-    private ArrayList<TrackDTO> TrackDTOS;
+    private boolean Owner;
+    private List<TrackDTO> tracks;
+
+    public PlaylistDTO(int id, String name, boolean owner) {
+        this.id = id;
+        this.name = name;
+        this.Owner = owner;
+        //this.tracks = new ArrayList<>();
+    }
 
     public PlaylistDTO() {
-
-        TrackDTOS = new ArrayList<>();
     }
 
     public int getId() {
@@ -26,11 +31,11 @@ public class PlaylistDTO {
     }
 
     public boolean isOwner() {
-        return isOwner;
+        return Owner;
     }
 
-    public void setOwner(String owner, String user) {
-        isOwner = owner.equals(user);
+    public void setOwner(boolean owner) {
+        this.Owner = owner;
     }
 
     public String getName() {
@@ -41,21 +46,18 @@ public class PlaylistDTO {
         this.name = name;
     }
 
-    public ArrayList<TrackDTO> getTrackDTOS() {
-        return TrackDTOS;
-    }
-
-    public void setTrackDTOS(ArrayList<TrackDTO> trackDTOS) {
-        this.TrackDTOS = trackDTOS;
-    }
-
-
-    public void addTrack(TrackDTO TrackDTO) {
-        TrackDTOS.add(TrackDTO);
-    }
-
-
-
+//        public ArrayList<TrackDTO> getTrackDTOS () {
+//            return TrackDTOS;
+//        }
+//
+//        public void setTrackDTOS (ArrayList < TrackDTO > trackDTOS) {
+//            this.TrackDTOS = trackDTOS;
+//        }
+//
+//
+//        public void addTrack (TrackDTO TrackDTO){
+//            TrackDTOS.add(TrackDTO);
+//        }
 
 
 }

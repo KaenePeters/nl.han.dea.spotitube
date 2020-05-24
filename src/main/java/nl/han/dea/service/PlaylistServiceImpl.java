@@ -3,38 +3,33 @@ package nl.han.dea.service;
 import nl.han.dea.DTO.PlaylistDTO;
 import nl.han.dea.DTO.PlaylistsDTO;
 import nl.han.dea.exceptions.InvalidTokenException;
-import nl.han.dea.persistence.ConnectionFactory;
-import nl.han.dea.persistence.IPlaylistDAO;
-import nl.han.dea.persistence.ITokenDAO;
-import nl.han.dea.persistence.TokenDaoImpl;
+import nl.han.dea.persistence.*;
 
 import javax.enterprise.inject.Default;
 import javax.inject.Inject;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 @Default
 public class PlaylistServiceImpl implements IPlaylistService {
 
-    @Inject
-    private ITokenDAO iTokenDAO;
-    @Inject
-    private IPlaylistDAO playlistDAO;
+
+    private ITokenDAO iTokenDAO = new TokenDaoImpl();
+
+    private IPlaylistDAO playlistDAO = new PlaylistDAOImpl();
 
     public PlaylistServiceImpl() {
     }
 
-//    @Inject
-    public PlaylistServiceImpl(IPlaylistDAO playlistDAO) {
+    @Inject
+    public PlaylistServiceImpl(IPlaylistDAO playlistDAO, ITokenDAO iTokenDAO) {
         this.playlistDAO = playlistDAO;
+        this.iTokenDAO = iTokenDAO;
     }
 
     @Override
     public PlaylistsDTO getPlaylistsDTO(String token) {
         String username = iTokenDAO.tokenIsValid(token);
         if (username != null) {
-            return playlistDAO.getAllPlaylists(username);
+            return playlistDAO.getPlaylists(username);
         }
        else {
             throw new InvalidTokenException("Wrong Token.");

@@ -24,7 +24,6 @@ public class Main {
                 System.out.println(resultSet.getString("user"));
                 resultSet.getString("password");
             }
-            connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

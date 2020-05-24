@@ -3,6 +3,7 @@ package nl.han.dea.resources;
 import nl.han.dea.DTO.PlaylistDTO;
 import nl.han.dea.DTO.PlaylistsDTO;
 import nl.han.dea.service.IPlaylistService;
+import nl.han.dea.service.PlaylistServiceImpl;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -10,21 +11,25 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 
-
 @Path("/playlists")
 public class PlaylistResource {
 
-    @Inject
-    private IPlaylistService playlistService;
+
+    private IPlaylistService playlistService = new PlaylistServiceImpl();
 
     public PlaylistResource() {
+    }
+
+    @Inject
+    public PlaylistResource(IPlaylistService playlistService) {
+        this.playlistService = playlistService;
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getPlaylists(@QueryParam("token") String token) {
         PlaylistsDTO playlistsDTO = playlistService.getPlaylistsDTO(token);
-        return Response.status(Response.Status.OK).entity(playlistsDTO).build();
+        return Response.ok(playlistsDTO).build();
     }
 
     @DELETE
@@ -42,7 +47,7 @@ public class PlaylistResource {
     public Response addPlaylist(PlaylistDTO playlistDTO, @QueryParam("token") String token) {
         playlistService.addPlaylist(playlistDTO, token);
         PlaylistsDTO playlistsDTO = playlistService.getPlaylistsDTO(token);
-        return Response.status(Response.Status.OK).entity(playlistsDTO).build();
+        return Response.ok(playlistsDTO).build();
     }
 
     @PUT
