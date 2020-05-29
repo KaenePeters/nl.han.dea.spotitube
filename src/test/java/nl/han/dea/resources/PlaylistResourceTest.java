@@ -4,47 +4,34 @@ import nl.han.dea.DTO.PlaylistDTO;
 import nl.han.dea.DTO.PlaylistsDTO;
 import nl.han.dea.DTO.TrackDTO;
 import nl.han.dea.DTO.TracksDTO;
-import nl.han.dea.persistence.IPlaylistDAO;
-import nl.han.dea.persistence.ITokenDAO;
-import nl.han.dea.persistence.ITrackDAO;
 import nl.han.dea.service.IPlaylistService;
-import nl.han.dea.service.ITrackService;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
-@ExtendWith(MockitoExtension.class)
+@RunWith(MockitoJUnitRunner.class)
 public class PlaylistResourceTest {
 
+    private final int PLAYLIST_ID = 1;
+    private final int TRACK_ID = 2;
     private final String TOKEN = "1234";
-    private PlaylistDTO playlist;
+    private PlaylistsDTO playlistsDTO;
     private TrackDTO track;
-
-    @Mock
-    ITokenDAO tokenDAO;
-    @Mock
-    IPlaylistDAO playlistDAO;
-
-    @Mock
-    private ITrackDAO trackDAO;
+    private TracksDTO tracklist;
 
     @Mock
     private IPlaylistService playlistService;
-
-    @Mock
-    private ITrackService trackServiceMock;
 
     @InjectMocks
     private PlaylistResource sut;
@@ -52,60 +39,70 @@ public class PlaylistResourceTest {
 
     @BeforeEach
     void setUp() {
+        track = new TrackDTO(TRACK_ID, "", "", 60, "", PLAYLIST_ID, "", "", true);
+        List<TrackDTO> tracks = new ArrayList<>();
+        tracklist = new TracksDTO(tracks);
 
-
-        track = new TrackDTO();
-        track.setId(1);
-        track.setDuration(60);
-
-        TracksDTO tracklist = new TracksDTO(new ArrayList<>(Collections.singletonList(track)));
-        playlist = new PlaylistDTO();
-        playlist.setId(1);
+        PlaylistDTO playlist = new PlaylistDTO();
+        playlist.setId(PLAYLIST_ID);
         playlist.setOwner(true);
         playlist.setTracks(tracklist.getTracks());
+        List<PlaylistDTO> playlists = new ArrayList<>();
+        playlistsDTO = new PlaylistsDTO(playlists, 0);
     }
 
     @Test
-    public void getPlaylistsForUsername() {
-        IPlaylistService playlistService = mock(IPlaylistService.class);
-        ITokenDAO tokenDAO = mock(ITokenDAO.class);
-        IPlaylistDAO playlistDAO = mock(IPlaylistDAO.class);
-
-        List<PlaylistDTO> playlists = new ArrayList<>(Collections.singletonList(playlist));
-        PlaylistsDTO testPlaylists = new PlaylistsDTO(playlists, playlist.getDuration());
-
-        Mockito.when(playlistService.getPlaylistsForUsername(TOKEN))
-                .thenReturn(testPlaylists);
+    public void checksIfReturnAreCorrectThePlaylistsByCorrectToken() {
+        when(playlistService.getPlaylistsForUsername(TOKEN)).thenReturn(playlistsDTO);
 
         Response actualResult = sut.getPlaylistsForUsername(TOKEN);
-
         assertEquals(Response.Status.OK.getStatusCode(), actualResult.getStatus());
 
-        Mockito.verify(playlistService).getPlaylistsForUsername(TOKEN);
-        assertEquals(testPlaylists, actualResult.getEntity());
+        verify(playlistService).getPlaylistsForUsername(TOKEN);
+        assertEquals(playlistsDTO, actualResult.getEntity());
     }
 
     @Test
     public void deletePlaylistById() {
+        sut.deletePlaylistById(PLAYLIST_ID, TOKEN);
+        verify(playlistService).deletePlaylistById(PLAYLIST_ID, TOKEN);
     }
 
     @Test
     public void addPlaylist() {
+        sut.deletePlaylistById(PLAYLIST_ID, TOKEN);
+        verify(playlistService).deletePlaylistById(PLAYLIST_ID, TOKEN);
     }
 
     @Test
     public void editPlaylistById() {
+        String PLAYLIST_NAME = "testPlaylist";
+        PlaylistDTO playlist = new PlaylistDTO(PLAYLIST_ID, PLAYLIST_NAME, true);
+        sut.editPlaylistById(playlist, PLAYLIST_ID, TOKEN);
+        verify(playlistService).editPlaylistById(playlist, PLAYLIST_ID, TOKEN);
     }
 
     @Test
     public void getAllTracksForPlaylist() {
+        when(playlistService.getAllTracksForPlaylist(PLAYLIST_ID, TOKEN)).thenReturn(tracklist);
+        sut.getAllTracksForPlaylist(PLAYLIST_ID, TOKEN);
+        verify(playlistService).getAllTracksForPlaylist(PLAYLIST_ID, TOKEN);
     }
 
     @Test
     public void removeTrackFromPlaylist() {
+        sut.removeTrackFromPlaylist(PLAYLIST_ID, TRACK_ID, TOKEN);
+        verify(playlistService).removeTrackFromPlaylist(PLAYLIST_ID, TRACK_ID, TOKEN);
     }
 
     @Test
     public void addTrackToPlaylist() {
+        sut.addTrackToPlaylist(PLAYLIST_ID, TOKEN, track);
+        verify(playlistService).addTrackToPlaylist(PLAYLIST_ID, track, TOKEN);
+    }
+
+    @Test
+    public void testConstructor() {
+        PlaylistResource playlistResource = new PlaylistResource();
     }
 }

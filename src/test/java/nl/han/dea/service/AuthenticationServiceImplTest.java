@@ -2,6 +2,7 @@ package nl.han.dea.service;
 
 import nl.han.dea.DTO.TokenDTO;
 import nl.han.dea.DTO.UserDTO;
+import nl.han.dea.exceptions.SpotitubeLoginException;
 import nl.han.dea.persistence.ITokenDAO;
 import nl.han.dea.persistence.UserDAO;
 import nl.han.dea.util.TokenGenerator;
@@ -11,6 +12,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
 
 @ExtendWith(MockitoExtension.class)
 public class AuthenticationServiceImplTest {
@@ -40,6 +45,16 @@ public class AuthenticationServiceImplTest {
 
         Mockito.verify(tokenDAO).saveAndReturnNewToken(tokenDTO.getUsername(), tokenDTO.getToken());
     }
+
+    @Test
+    void loginFailure() {
+        Mockito.when(userDAO.getUser(any())).thenReturn(null);
+
+        SpotitubeLoginException loginException = assertThrows(SpotitubeLoginException.class, () -> sut.login(any()));
+
+        assertEquals("Login failed for user.", loginException.getMessage());
+    }
+
 
     @Test
     void testConstructor() {

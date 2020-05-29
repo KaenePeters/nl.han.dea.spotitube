@@ -55,7 +55,6 @@ public class LoginResourceTest {
         loginException = assertThrows(SpotitubeLoginException.class, () -> sut.login(new UserDTO("testuser", "")));
 
         assertEquals("Login failed for user.", loginException.getMessage());
-
     }
 
     @Test
