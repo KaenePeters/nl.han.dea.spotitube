@@ -4,7 +4,7 @@ package nl.han.dea.persistence;
 
 public interface ITokenDAO {
 
-    String tokenIsValid(String token);
+    String getUsernameFromToken(String token);
 
 
     String saveAndReturnNewToken(String username, String generateToken);

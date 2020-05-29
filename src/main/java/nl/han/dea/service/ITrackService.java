@@ -4,5 +4,5 @@ import nl.han.dea.DTO.TracksDTO;
 
 public interface ITrackService {
 
-    TracksDTO getAllTracks(String token, int playlistId);
+    TracksDTO getAllTracksNotInPlaylist(int playlistId, String token);
 }

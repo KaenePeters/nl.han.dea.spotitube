@@ -7,19 +7,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c8a0830-218c-4f70-89f9-498c5ced0a83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/InvalidTokenExceptionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/MissingTokenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/MissingTokenExceptionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/InvalidTokenExceptionMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/LoginExceptionMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/MissingTokenExceptionMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/PersistenceExceptionMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/PlaylistDAOImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/TokenDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/TrackDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/UserDAOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/PlaylistResourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/TrackResourceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/AuthenticationServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/PlaylistServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/service/TrackServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spotitube.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spotitube.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TokenDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TokenDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TracksDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TracksDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/ItemNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginExceptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceExceptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeLoginException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubePersistenceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/database/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITokenDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITokenDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITrackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITrackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/dea/TokenDTOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/dea/UserDTOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/LoginResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/LoginResourceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +76,7 @@
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="271" />
+    <option name="myElementSize" value="54" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -66,10 +108,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="43" />
+            <state relative-caret-position="349">
+              <caret line="34" column="43" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,19 +120,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITokenDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resources/LoginResourceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="485">
+              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,22 +132,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resources/PlaylistResourceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="723">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resources/TrackResourceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/AuthenticationServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,71 +173,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+            <state relative-caret-position="339">
+              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#844#845#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/TrackServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/PlaylistServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#244#245#0" expanded="true" />
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="30" column="60" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -199,44 +217,49 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="cdi.beans_1_1" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>userDAO</find>
-      <find>getstat</find>
-      <find>unaut</find>
-      <find>length</find>
-      <find>get</find>
-      <find>getConnecion</find>
-      <find>driver</find>
-      <find>service</find>
-      <find>serv</find>
-      <find>currentUser</find>
-      <find>user</find>
-      <find>Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: org/apache/catalina/util/ServerInf</find>
-      <find>java.lang.no</find>
-      <find>next()</find>
-      <find>javax</find>
-      <find>mysql</find>
-      <find>fasterxml</find>
-      <find>print</find>
-      <find>asdfasdf0</find>
       <find>PlaylistDAOImpl</find>
       <find>getp</find>
-      <find>kaene</find>
       <find>Kaene</find>
       <find>bool</find>
       <find>post</find>
       <find>mys</find>
       <find>playlist</find>
       <find>playli</find>
+      <find>playlistsDTO</find>
+      <find>getdu</find>
+      <find>0</find>
+      <find>id</find>
+      <find>saveAndReturnNewToken</find>
+      <find>tracksDTO</find>
+      <find>track</find>
+      <find>offline</find>
+      <find>TRACK</find>
+      <find>Track</find>
+      <find>getNewPlaylistId</find>
+      <find>DB_USER</find>
+      <find>user</find>
+      <find>code</find>
+      <find>&quot;MissingToken&quot;</find>
+      <find>stat</find>
+      <find>getName</find>
+      <find>trackDAO</find>
+      <find>mockit</find>
+      <find>set</find>
+      <find>LoginException</find>
+      <find>kaene</find>
     </findStrings>
+    <replaceStrings>
+      <replace>&quot;Missing Token.&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -244,57 +267,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceExceptionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/SpotitubePersistenceException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubePersistenceException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/Playlist.java" />
-        <option value="44058b61-af45-4f4a-a346-9fce4938234b/schema/spotitube/table/account.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/InvalidTokenException.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/MariaDBConnector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TokenServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TokenService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/Track.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/DTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITokenService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITokenDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITrackService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TracksDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="44058b61-af45-4f4a-a346-9fce4938234b/schema/spotitube/table/playlist/index/playlists___fk" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/MissingTokenException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/MissingTokenException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeMissingTokenException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubePersistenceExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubePersistenceException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeMissingTokenExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeLoginExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeLoginException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeInvalidTokenExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/MissingTokenExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/InvalidTokenExceptionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TokenDTO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/TrackResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/UserDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/PlaylistDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/TokenDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/TrackDaoImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/UserDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/service/AuthenticationServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/InvalidTokenExceptionMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/MissingTokenExceptionMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/LoginExceptionMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/PersistenceExceptionMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/LoginResourceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/service/TrackServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/service/PlaylistServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/nl/han/dea/resources/PlaylistResourceTest.java" />
       </list>
     </option>
   </component>
@@ -330,7 +353,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="974" />
+    <option name="width" value="761" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -340,7 +363,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -381,7 +403,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dea" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
@@ -392,10 +423,75 @@
               <item name="dea" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spotitube" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spotitube" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dea" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -406,6 +502,8 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/nl/han/dea/service" />
     <property name="last_opened_file_path" value="$USER_HOME$/popatterns" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -423,21 +521,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="nl.han.dea.exceptions" />
+      <recent name="nl.han.dea.persistence" />
+      <recent name="nl.han.dea.service" />
       <recent name="nl.han.dea.resources" />
       <recent name="nl.han.dea" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="nl.han.dea.persistence" />
-      <recent name="nl.han.dea.exceptions" />
-      <recent name="nl.han.dea.service" />
-      <recent name="nl.han.dea.DTO" />
-      <recent name="nl.han.dea.resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kaene-laptop\javaOpdrachten\spotitube\src\main\webapp" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Kaene-laptop\javaOpdrachten\spotitube\src\main\webapp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="nl.han.dea.service" />
+      <recent name="nl.han.dea.persistence" />
+      <recent name="nl.han.dea.exceptions" />
+      <recent name="nl.han.dea.DTO" />
+      <recent name="nl.han.dea.resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -452,7 +553,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TomEE Server.TomEE 9.0.12">
+  <component name="RunManager" selected="JUnit.PlaylistResourceTest.getPlaylistsForUsername">
     <configuration name="All in spotitube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spotitube" />
       <option name="PACKAGE_NAME" value="" />
@@ -461,65 +562,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaylistResourceTest.getPlaylistsForUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spotitube" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.han.dea.exceptions.*" />
+          <option name="PATTERN" value="nl.han.dea.resources.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nl.han.dea.resources" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.LoginResourceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginResourceTest.generateUUID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spotitube" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nl.han.dea.exceptions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nl.han.dea.resources" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.LoginResourceTest" />
-      <option name="METHOD_NAME" value="generateUUID" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.PlaylistResourceTest" />
+      <option name="METHOD_NAME" value="getPlaylistsForUsername" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginResourceTest.loginFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaylistServiceImplTest.getPlaylistsForUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spotitube" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.han.dea.exceptions.*" />
+          <option name="PATTERN" value="nl.han.dea.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="nl.han.dea.resources" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.LoginResourceTest" />
-      <option name="METHOD_NAME" value="loginFailure" />
+      <option name="PACKAGE_NAME" value="nl.han.dea.service" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.service.PlaylistServiceImplTest" />
+      <option name="METHOD_NAME" value="getPlaylistsForUsername" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginResourceTest.loginSucces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrackServiceImplTest.testConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spotitube" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nl.han.dea.exceptions.*" />
+          <option name="PATTERN" value="nl.han.dea.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="nl.han.dea.resources" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.dea.resources.LoginResourceTest" />
-      <option name="METHOD_NAME" value="loginSucces" />
+      <option name="PACKAGE_NAME" value="nl.han.dea.service" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.dea.service.TrackServiceImplTest" />
+      <option name="METHOD_NAME" value="testConstructor" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nl.han.dea in spotitube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spotitube" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nl.han.dea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nl.han.dea" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -597,20 +697,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in spotitube" />
-      <item itemvalue="JUnit.LoginResourceTest" />
-      <item itemvalue="JUnit.LoginResourceTest.generateUUID" />
-      <item itemvalue="JUnit.LoginResourceTest.loginFailure" />
-      <item itemvalue="JUnit.LoginResourceTest.loginSucces" />
       <item itemvalue="TomEE Server.TomEE 9.0.12" />
+      <item itemvalue="JUnit.PlaylistServiceImplTest.getPlaylistsForUsername" />
+      <item itemvalue="JUnit.All in spotitube" />
+      <item itemvalue="JUnit.nl.han.dea in spotitube" />
+      <item itemvalue="JUnit.TrackServiceImplTest.testConstructor" />
+      <item itemvalue="JUnit.PlaylistResourceTest.getPlaylistsForUsername" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlaylistResourceTest.getPlaylistsForUsername" />
+        <item itemvalue="JUnit.PlaylistServiceImplTest.getPlaylistsForUsername" />
+        <item itemvalue="JUnit.TrackServiceImplTest.testConstructor" />
+        <item itemvalue="JUnit.nl.han.dea in spotitube" />
         <item itemvalue="JUnit.All in spotitube" />
-        <item itemvalue="JUnit.LoginResourceTest" />
-        <item itemvalue="JUnit.LoginResourceTest.loginFailure" />
-        <item itemvalue="JUnit.LoginResourceTest.generateUUID" />
-        <item itemvalue="JUnit.LoginResourceTest.loginSucces" />
       </list>
     </recent_temporary>
   </component>
@@ -660,7 +760,8 @@
       <workItem from="1583840172284" duration="642000" />
       <workItem from="1584965347258" duration="4796000" />
       <workItem from="1590258243470" duration="6939000" />
-      <workItem from="1590325702924" duration="16942000" />
+      <workItem from="1590325702924" duration="39537000" />
+      <workItem from="1590585721718" duration="46735000" />
     </task>
     <task id="LOCAL-00001" summary="Login bijgewerkt niet af">
       <created>1552385290859</created>
@@ -718,43 +819,50 @@
       <option name="project" value="LOCAL" />
       <updated>1559308491458</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Problemen met het verkrijgen van playlists het wordt veel vaker gereturned dan nodig. nog geen tests geschreven, atm bezig met GetAlltracks geeft nog niks terug.">
+      <created>1590352669353</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590352669353</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginResourceTest - 2019.03.18 at 11h 38m 08s.xml">
-      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    <history-entry file="PlaylistServiceImplTest_getPlaylistsForUsername - 2020.05.29 at 15h 20m 17s.xml">
+      <configuration name="PlaylistServiceImplTest.getPlaylistsForUsername" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginResourceTest - 2019.03.18 at 11h 42m 37s.xml">
-      <configuration name="LoginResourceTest" configurationId="JUnit" />
+    <history-entry file="PlaylistServiceImplTest - 2020.05.29 at 15h 20m 22s.xml">
+      <configuration name="PlaylistServiceImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoginResourceTest - 2019.03.18 at 11h 43m 44s.xml">
-      <configuration name="LoginResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginResourceTest - 2019.03.19 at 10h 25m 05s.xml">
-      <configuration name="LoginResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginResourceTest_loginFailure - 2019.03.19 at 10h 25m 57s.xml">
-      <configuration name="LoginResourceTest.loginFailure" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginResourceTest - 2019.03.19 at 10h 27m 55s.xml">
-      <configuration name="LoginResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginResourceTest - 2019.03.19 at 11h 15m 42s.xml">
-      <configuration name="LoginResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginResourceTest - 2019.03.21 at 10h 26m 15s.xml">
-      <configuration name="LoginResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_spotitube - 2019.03.28 at 22h 12m 52s.xml">
+    <history-entry file="All_in_spotitube - 2020.05.29 at 15h 25m 53s.xml">
       <configuration name="All in spotitube" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_spotitube - 2019.03.28 at 22h 14m 49s.xml">
-      <configuration name="All in spotitube" configurationId="JUnit" />
+    <history-entry file="nl_han_dea_in_spotitube - 2020.05.29 at 15h 26m 12s.xml">
+      <configuration name="nl.han.dea in spotitube" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrackServiceImplTest_testConstructor - 2020.05.29 at 15h 27m 45s.xml">
+      <configuration name="TrackServiceImplTest.testConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlaylistServiceImplTest_getPlaylistsForUsername - 2020.05.29 at 15h 28m 05s.xml">
+      <configuration name="PlaylistServiceImplTest.getPlaylistsForUsername" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlaylistServiceImplTest_getPlaylistsForUsername - 2020.05.29 at 15h 29m 26s.xml">
+      <configuration name="PlaylistServiceImplTest.getPlaylistsForUsername" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlaylistServiceImplTest_getPlaylistsForUsername - 2020.05.29 at 15h 32m 28s.xml">
+      <configuration name="PlaylistServiceImplTest.getPlaylistsForUsername" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlaylistServiceImplTest_getPlaylistsForUsername - 2020.05.29 at 15h 33m 49s.xml">
+      <configuration name="PlaylistServiceImplTest.getPlaylistsForUsername" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PlaylistResourceTest_getPlaylistsForUsername - 2020.05.29 at 15h 36m 13s.xml">
+      <configuration name="PlaylistResourceTest.getPlaylistsForUsername" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173802000" />
+    <option name="totallyTimeSpent" value="243132000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -767,9 +875,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7710049" visible="true" weight="0.14605543" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7710049" visible="true" weight="0.16577825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -777,8 +884,8 @@
       <window_info id="Web" order="5" sideWeight="0.22899505" side_tool="true" weight="0.15138593" />
       <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49946696" visible="true" weight="0.30985916" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32827735" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49946696" visible="true" weight="0.312026" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -799,12 +906,12 @@
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.24945295" />
       <window_info anchor="right" id="Database" order="4" weight="0.20788912" />
-      <window_info anchor="right" id="Maven" order="5" sideWeight="0.49919224" weight="0.3075693" />
+      <window_info anchor="right" id="Maven" order="5" sideWeight="0.496063" weight="0.32675907" />
       <window_info anchor="right" id="JSF" order="6" weight="0.32995737" />
       <window_info anchor="right" id="Bean Validation" order="7" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="CDI" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50080776" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.503937" side_tool="true" weight="0.32675907" />
       <window_info anchor="right" id="Mongo Explorer" order="11" weight="0.32995737" />
     </layout>
   </component>
@@ -863,48 +970,37 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spotitube$nl_han_dea_exceptions_in_spotitube.ic" NAME="nl.han.dea.exceptions in spotitube Coverage Results" MODIFIED="1590755993381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>nl.han.dea.exceptions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/spotitube$All_in_spotitube__2_.ic" NAME="All in spotitube (2) Coverage Results" MODIFIED="1590686543529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/spotitube$All_in_spotitube.ic" NAME="All in spotitube Coverage Results" MODIFIED="1590758744820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/spotitube$LoginResourceTest_loginSucces.ic" NAME="LoginResourceTest.loginSucces Coverage Results" MODIFIED="1590699042922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>nl.han.dea.resources.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/spotitube$nl_han_dea_service_in_spotitube.ic" NAME="nl.han.dea.service in spotitube Coverage Results" MODIFIED="1590701361649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>nl.han.dea.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/spotitube$nl_han_dea_resources_in_spotitube.ic" NAME="nl.han.dea.resources in spotitube Coverage Results" MODIFIED="1590701558052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>nl.han.dea.resources.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/spotitube$nl_han_dea_in_spotitube.ic" NAME="nl.han.dea in spotitube Coverage Results" MODIFIED="1590758768522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>nl.han.dea.*</FILTER>
+    </SUITE>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/spotitube-master/spotitube/src/main/java/nl/han/ica/oose/dea/dal/PlaylistsDAO.java" />
-    <entry file="das://44058b61-af45-4f4a-a346-9fce4938234b/schema/spotitube/table/account.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/SpotitubeLoginException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="5" />
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/InvalidTokenException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/database/ConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/MongoDBConnector.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/MariaDBConnector.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/TokenServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITokenService.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15.jar!/com/mysql/cj/protocol/Resultset.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
+        <state relative-caret-position="450">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -913,15 +1009,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/ErrorDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/TokenDTOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/UserDTOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/util/TokenGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#116#117#0" expanded="true" />
             <element signature="e#167#168#0" expanded="true" />
@@ -929,152 +1061,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar!/javax/ws/rs/core/MediaType.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/UserDAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="170">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Override.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/TrackDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/TokenDaoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar!/javax/ws/rs/core/Response.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/LocalAuthenticationService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/ITrackService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="236" column="9" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TokenDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/TrackResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TracksDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.sql/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="546" column="12" selection-start-line="546" selection-start-column="12" selection-end-line="546" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticatedServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="50" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-          <folding>
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1086,10 +1126,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TrackDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="55" column="27" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="27" />
+          <folding>
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1103,118 +1185,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml.versionsBackup">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginExceptionMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/LoginResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://44058b61-af45-4f4a-a346-9fce4938234b/schema/spotitube/table/playlist/index/playlists___fk">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/InvalidTokenException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="das://44058b61-af45-4f4a-a346-9fce4938234b/schema/spotitube/table/playlist">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="df5089db-74a7-4d31-b8a5-36900e7a355e">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/InvalidTokenExceptionMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="221">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/resources/PlaylistResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/MissingTokenExceptionMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="67" />
+        <state relative-caret-position="221">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/IPlaylistService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/LoginExceptionMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="204">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/MissingTokenExceptionMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" selection-start-line="11" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/PersistenceExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/exceptions/LoginException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/PersistenceExceptionMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TrackDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/TokenDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITokenDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/TokenDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="213">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/IAuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/AuthenticationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1223,8 +1336,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/PlaylistServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="43" />
+        <state relative-caret-position="203">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/exceptions/InvalidTokenExceptionMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/persistence/PlaylistDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/service/TrackServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1233,41 +1370,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/IPlaylistDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="136">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/ITrackDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/persistence/PlaylistDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="33" column="67" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
+        <state relative-caret-position="339">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/dea/DTO/PlaylistsDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resources/LoginResourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="485">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#244#245#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resources/PlaylistResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/resources/TrackResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/AuthenticationServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/PlaylistServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/dea/service/TrackServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>

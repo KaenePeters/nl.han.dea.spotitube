@@ -1,6 +1,5 @@
 package nl.han.dea.DTO;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class PlaylistsDTO {
@@ -9,16 +8,13 @@ public class PlaylistsDTO {
     private int length;
 
 
-    public PlaylistsDTO() {
-        playlists = new ArrayList<>();
-    }
-
-    public List<PlaylistDTO> getPlaylistsDTO() {
-        return playlists;
-    }
-
-    public void setPlaylists(List<PlaylistDTO> playlists) {
+    public PlaylistsDTO(List<PlaylistDTO> playlists, int length) {
         this.playlists = playlists;
+        this.length = length;
+    }
+
+    public List<PlaylistDTO> getPlaylists() {
+        return playlists;
     }
 
     public int getLength() {
@@ -29,14 +25,4 @@ public class PlaylistsDTO {
         this.length = length;
     }
 
-
-//    @Override
-//    public String toString() {
-//        for (PlaylistDTO playlist : playlists)
-//        {
-//            playlist.getName();
-//
-//        }
-//        return ;
-//    }
 }

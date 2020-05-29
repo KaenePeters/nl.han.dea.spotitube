@@ -1,5 +1,7 @@
 package nl.han.dea.persistence;
 
+import nl.han.dea.persistence.database.ConnectionFactory;
+
 import javax.enterprise.inject.Default;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +12,7 @@ import java.sql.SQLException;
 public class TokenDaoImpl implements ITokenDAO {
 
     @Override
-    public String tokenIsValid(String token) {
+    public String getUsernameFromToken(String token) {
         String query = "SELECT username FROM token WHERE token=?";
         try (
                 Connection connection = new ConnectionFactory().getConnecion();

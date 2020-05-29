@@ -3,24 +3,24 @@ package nl.han.dea.DTO;
 public class UserDTO {
 
 
-    private String user = "kaene";
+    private String username = "kaene";
     private String password = "kaene1234";
-    private String name = "Kaene Peters";
+    private String name;
 
-    public UserDTO() {
+    public UserDTO(){
+
     }
-
-    public UserDTO(String user, String password) {
-        this.user = user;
+    public UserDTO(String username, String password) {
+        this.username = username;
         this.password = password;
     }
 
-    public String getUser() {
-        return user;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -31,17 +31,15 @@ public class UserDTO {
         this.password = password;
     }
 
-    public String getName(String name) {
+    public String getName() {
+        if (this.name.equals("")) {
+            return username;
+        }
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-
-    }
-
-    public String getName() {
-        return name;
     }
 }
 

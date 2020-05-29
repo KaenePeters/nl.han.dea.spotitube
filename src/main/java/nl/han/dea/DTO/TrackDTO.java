@@ -26,7 +26,7 @@ public class TrackDTO {
     }
 
     public int getDuration() {
-        return 0;
+        return duration;
     }
 
     public int getId() {

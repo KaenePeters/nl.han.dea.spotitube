@@ -1,6 +1,5 @@
 package nl.han.dea.resources;
 
-import nl.han.dea.DTO.TokenDTO;
 import nl.han.dea.DTO.UserDTO;
 import nl.han.dea.service.IAuthenticationService;
 
@@ -15,19 +14,23 @@ import javax.ws.rs.core.Response;
 @Path("/login")
 public class LoginResource {
 
-    @Inject
+
     private IAuthenticationService authenticationService;
 
     public LoginResource() {
+    }
+
+    @Inject
+    public LoginResource(IAuthenticationService authenticationService) {
+        this.authenticationService = authenticationService;
     }
 
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(UserDTO user) {
-        TokenDTO token = authenticationService.login(user.getUser(), user.getPassword());
-        return Response.ok(token).build();
+    public Response login(UserDTO userDTO) {
+        return Response.ok(authenticationService.login(userDTO)).build();
     }
 
 

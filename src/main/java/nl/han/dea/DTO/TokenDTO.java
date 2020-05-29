@@ -3,15 +3,14 @@ package nl.han.dea.DTO;
 public class TokenDTO {
 
     private String token;
-    private String user;
+    private String username;
 
     public TokenDTO() {
     }
 
-    public TokenDTO(String token, String user) {
+    public TokenDTO(String token, String username) {
         this.token = token;
-        this.user = user;
-
+        this.username = username;
     }
 
     public String getToken() {
@@ -22,12 +21,12 @@ public class TokenDTO {
         this.token = token;
     }
 
-    public String getUser() {
-        return user;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
 

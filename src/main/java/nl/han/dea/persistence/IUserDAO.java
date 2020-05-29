@@ -4,5 +4,5 @@ import nl.han.dea.DTO.UserDTO;
 
 public interface IUserDAO {
 
-    UserDTO getUser(String user, String password);
+    UserDTO getUser(UserDTO userDTO);
 }

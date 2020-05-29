@@ -9,14 +9,15 @@ public class PlaylistDTO {
     private boolean Owner;
     private List<TrackDTO> tracks;
 
+
+    public PlaylistDTO() {
+    }
+
     public PlaylistDTO(int id, String name, boolean owner) {
         this.id = id;
         this.name = name;
         this.Owner = owner;
-        //this.tracks = new ArrayList<>();
-    }
-
-    public PlaylistDTO() {
+        this.tracks = new ArrayList<>();
     }
 
     public int getId() {
@@ -24,10 +25,7 @@ public class PlaylistDTO {
     }
 
     public void setId(int id) {
-    }
-
-    public PlaylistDTO getPlaylist() {
-        return this;
+        this.id = id;
     }
 
     public boolean isOwner() {
@@ -46,19 +44,24 @@ public class PlaylistDTO {
         this.name = name;
     }
 
-//        public ArrayList<TrackDTO> getTrackDTOS () {
-//            return TrackDTOS;
-//        }
-//
-//        public void setTrackDTOS (ArrayList < TrackDTO > trackDTOS) {
-//            this.TrackDTOS = trackDTOS;
-//        }
-//
-//
-//        public void addTrack (TrackDTO TrackDTO){
-//            TrackDTOS.add(TrackDTO);
-//        }
+    public int getDuration() {
+        int duration = 0;
+        if (tracks.size() > 0) {
+            for (TrackDTO track : tracks) {
+                duration += track.getDuration();
+            }
+            return duration;
+        }
+        return 0;
+    }
 
+    public List<TrackDTO> getTrack() {
+        return tracks;
+    }
+
+    public void setTracks(List<TrackDTO> tracks) {
+        this.tracks = tracks;
+    }
 
 }
 

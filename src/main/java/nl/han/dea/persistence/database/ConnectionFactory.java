@@ -1,4 +1,4 @@
-package nl.han.dea.persistence;
+package nl.han.dea.persistence.database;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -44,7 +44,7 @@ public class ConnectionFactory {
         try {
             return DriverManager.getConnection(
                     properties.getProperty("db.url"),
-                    properties.getProperty("db.user"),
+                    DB_USER,
                     DB_PASSWORD);
         } catch (SQLException e) {
             throw new RuntimeException(e);

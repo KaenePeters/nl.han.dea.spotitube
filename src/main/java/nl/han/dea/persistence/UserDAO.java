@@ -1,6 +1,7 @@
 package nl.han.dea.persistence;
 
 import nl.han.dea.DTO.UserDTO;
+import nl.han.dea.persistence.database.ConnectionFactory;
 
 import javax.enterprise.inject.Default;
 import java.sql.Connection;
@@ -10,26 +11,27 @@ import java.sql.SQLException;
 @Default
 public class UserDAO implements IUserDAO {
 
-    public UserDTO getUser(String user, String password) {
-        UserDTO foundUser = null;
+    public UserDTO getUser(UserDTO userDTO) {
+        UserDTO user = null;
+        String query = "SELECT account.user, account.password, account.name from account where user = ? and password = ?";
         try (
                 Connection connection = new ConnectionFactory().getConnecion();
-                PreparedStatement preparedStatement = connection.prepareStatement("SELECT account.user, account.password, account.name from account where user = ? and password = ?");
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
         ) {
-            preparedStatement.setString(1, user);
-            preparedStatement.setString(2, password);
+            preparedStatement.setString(1, userDTO.getUsername());
+            preparedStatement.setString(2, userDTO.getPassword());
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                foundUser = new UserDTO();
-                foundUser.setName(resultSet.getString("name"));
-                foundUser.setUser(user);
-                foundUser.setPassword(password);
+                user = new UserDTO();
+                user.setName(resultSet.getString("name"));
+                user.setUsername(userDTO.getUsername());
+                user.setPassword(userDTO.getPassword());
 
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return foundUser;
+        return user;
     }
 
 
