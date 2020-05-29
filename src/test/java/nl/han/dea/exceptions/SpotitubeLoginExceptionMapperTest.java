@@ -7,16 +7,16 @@ import javax.ws.rs.core.Response;
 
 import static org.junit.Assert.assertEquals;
 
-public class LoginExceptionMapperTest {
+public class SpotitubeLoginExceptionMapperTest {
 
 
-    private LoginException loginException = new LoginException("testString");
-    private LoginExceptionMapper sut = new LoginExceptionMapper();
+    private SpotitubeLoginException spotitubeLoginException = new SpotitubeLoginException("testString");
+    private SpotitubeLoginExceptionMapper sut = new SpotitubeLoginExceptionMapper();
 
 
     @Test
     public void responseLoginExceptionExceptionSucces() {
-        Response actualResult = sut.toResponse(loginException);
+        Response actualResult = sut.toResponse(spotitubeLoginException);
         assertEquals(Response.Status.UNAUTHORIZED.getStatusCode(), actualResult.getStatus());
 
         ErrorDTO errorDTO = (ErrorDTO) actualResult.getEntity();

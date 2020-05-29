@@ -2,60 +2,43 @@ package nl.han.dea.resources;
 
 import nl.han.dea.DTO.TokenDTO;
 import nl.han.dea.DTO.UserDTO;
-import nl.han.dea.persistence.ITokenDAO;
-import nl.han.dea.persistence.IUserDAO;
-import nl.han.dea.persistence.TokenDaoImpl;
-import nl.han.dea.persistence.UserDAO;
+import nl.han.dea.exceptions.SpotitubeLoginException;
+import nl.han.dea.service.AuthenticationServiceImpl;
 import nl.han.dea.service.IAuthenticationService;
-import nl.han.dea.util.TokenGenerator;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import javax.security.auth.login.LoginException;
 import javax.ws.rs.core.Response;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
-@ExtendWith(MockitoExtension.class)
+@RunWith(MockitoJUnitRunner.class)
 public class LoginResourceTest {
 
+
     private String token = "1234";
+    private UserDTO testUser = new UserDTO("testuser", "testpassword");
 
     @Mock
     private IAuthenticationService authenticationService;
 
-
     @Mock
-    private ITokenDAO tokenDAO;
-    @Mock
-    private IUserDAO userDAO;
-    @Mock
-    private TokenGenerator tokenGenerator;
+    private SpotitubeLoginException loginException;
 
     @InjectMocks
     private LoginResource sut;
 
-    @BeforeEach
-    void setUp() {
-        sut = new LoginResource();
-        tokenDAO = new TokenDaoImpl();
-        userDAO = new UserDAO();
-        tokenGenerator = new TokenGenerator();
-    }
-
     @Test
     public void loginSucces() {
-        UserDTO testUser = new UserDTO("testuser", "testpassword");
-        when(tokenGenerator.generateToken()).thenReturn(token);
-        when(userDAO.getUser(testUser)).thenReturn(testUser);
-        when(tokenDAO.saveAndReturnNewToken(testUser.getUsername(), token)).thenReturn(token);
-        when(authenticationService.login(testUser)).thenReturn(new TokenDTO(token, testUser.getUsername()));
+        when(authenticationService.login(any())).thenReturn(new TokenDTO(token, testUser.getUsername()));
 
         Response actualResult = sut.login(testUser);
 
@@ -66,13 +49,13 @@ public class LoginResourceTest {
     }
 
     @Test
-    public void loginFailure() {
-        UserDTO user = new UserDTO("testuser", "testpassword");
-        when(authenticationService.login(user)).thenThrow(new LoginException("Login failed for user."));
+    public void loginFailure()  {
+        when(authenticationService.login(any())).thenThrow(new SpotitubeLoginException("Login failed for user."));
 
-        LoginException loginException = assertThrows(LoginException.class, () -> sut.login(new UserDTO("testuser", "testpassword")));
+        loginException = assertThrows(SpotitubeLoginException.class, () -> sut.login(new UserDTO("testuser", "")));
 
         assertEquals("Login failed for user.", loginException.getMessage());
+
     }
 
     @Test
