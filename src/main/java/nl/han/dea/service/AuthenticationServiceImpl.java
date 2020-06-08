@@ -2,10 +2,9 @@ package nl.han.dea.service;
 
 import nl.han.dea.DTO.TokenDTO;
 import nl.han.dea.DTO.UserDTO;
-import nl.han.dea.exceptions.LoginException;
+import nl.han.dea.exceptions.SpotitubeLoginException;
 import nl.han.dea.persistence.ITokenDAO;
 import nl.han.dea.persistence.IUserDAO;
-import nl.han.dea.persistence.TokenDaoImpl;
 import nl.han.dea.persistence.UserDAO;
 import nl.han.dea.util.TokenGenerator;
 
@@ -16,7 +15,7 @@ import javax.inject.Inject;
 public class AuthenticationServiceImpl implements IAuthenticationService {
 
     private ITokenDAO iTokenDAO;
-    private IUserDAO userDAO ;
+    private IUserDAO userDAO;
     private TokenGenerator tokenGenerator;
 
     public AuthenticationServiceImpl() {
@@ -35,7 +34,7 @@ public class AuthenticationServiceImpl implements IAuthenticationService {
         if (user != null) {
             return new TokenDTO(iTokenDAO.saveAndReturnNewToken(userDTO.getUsername(), tokenGenerator.generateToken()), user.getUsername());
         } else {
-            throw new LoginException("Login failed for user.");
+            throw new SpotitubeLoginException("Login failed for user.");
         }
     }
 }

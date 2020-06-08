@@ -85,13 +85,13 @@ public class PlaylistDAOImpl implements IPlaylistDAO {
     }
 
     @Override
-    public void editPlaylistById(String name, int playlistId) {
+    public void editPlaylistById(String playlistName, int playlistId) {
         String query = "UPDATE playlist1 SET name =?  WHERE id=?";
         try (
                 Connection connection = new ConnectionFactory().getConnecion();
                 PreparedStatement preparedStatement = connection.prepareStatement(query)
         ) {
-            preparedStatement.setString(1, name);
+            preparedStatement.setString(1, playlistName);
             preparedStatement.setInt(2, playlistId);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {

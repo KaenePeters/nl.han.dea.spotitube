@@ -1,5 +1,6 @@
 package nl.han.dea.persistence;
 
+import nl.han.dea.exceptions.PersistenceException;
 import nl.han.dea.persistence.database.ConnectionFactory;
 
 import javax.enterprise.inject.Default;
@@ -24,7 +25,7 @@ public class TokenDaoImpl implements ITokenDAO {
                 return resultSet.getString("username");
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new PersistenceException("Database connection error. Please try again later.");
         }
         return null;
     }
@@ -40,7 +41,7 @@ public class TokenDaoImpl implements ITokenDAO {
             preparedStatement.setString(2, generateToken);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new PersistenceException("Database connection error. Please try again later.");
         }
         return generateToken;
     }

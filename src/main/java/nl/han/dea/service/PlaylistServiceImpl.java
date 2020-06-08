@@ -16,7 +16,6 @@ import javax.inject.Inject;
 @Default
 public class PlaylistServiceImpl implements IPlaylistService {
 
-
     private ITokenDAO iTokenDAO;
     private IPlaylistDAO playlistDAO;
     private ITrackDAO trackDAO;
@@ -36,7 +35,7 @@ public class PlaylistServiceImpl implements IPlaylistService {
         String username = iTokenDAO.getUsernameFromToken(token);
         if (username != null) {
             return playlistDAO.getPlaylistsForUsername(username);
-        } else if (token != null && !token.isEmpty()) {
+        } else if (token == null || token.isEmpty()) {
             throw new MissingTokenException("Missing Token.");
         } else {
             throw new InvalidTokenException("Wrong Token.");
@@ -47,7 +46,7 @@ public class PlaylistServiceImpl implements IPlaylistService {
     public void deletePlaylistById(int playlistId, String token) {
         if (iTokenDAO.getUsernameFromToken(token) != null) {
             playlistDAO.deletePlaylist(playlistId);
-        } else if (token != null && !token.isEmpty()) {
+        } else if (token == null || token.isEmpty()) {
             throw new MissingTokenException("Missing Token.");
         } else {
             throw new InvalidTokenException("Wrong Token.");
@@ -59,7 +58,7 @@ public class PlaylistServiceImpl implements IPlaylistService {
         String username = iTokenDAO.getUsernameFromToken(token);
         if (username != null) {
             playlistDAO.addPlaylist(playlistDTO, username);
-        } else if (token != null && !token.isEmpty()) {
+        } else if (token == null || token.isEmpty()) {
             throw new MissingTokenException("Missing Token.");
         } else {
             throw new InvalidTokenException("Wrong Token.");
@@ -67,10 +66,10 @@ public class PlaylistServiceImpl implements IPlaylistService {
     }
 
     @Override
-    public void editPlaylistById(PlaylistDTO playlistDTO, int id, String token) {
+    public void editPlaylistById(PlaylistDTO playlistDTO, int playlistId, String token) {
         if (iTokenDAO.getUsernameFromToken(token) != null) {
-            playlistDAO.editPlaylistById(playlistDTO.getName(), id);
-        } else if (token != null && !token.isEmpty()) {
+            playlistDAO.editPlaylistById(playlistDTO.getName(), playlistId);
+        } else if (token == null || token.isEmpty()) {
             throw new MissingTokenException("Missing Token.");
         } else {
             throw new InvalidTokenException("Wrong Token.");
@@ -81,7 +80,7 @@ public class PlaylistServiceImpl implements IPlaylistService {
     public TracksDTO getAllTracksForPlaylist(int playlistId, String token) {
         if (iTokenDAO.getUsernameFromToken(token) != null) {
             return trackDAO.getAllTracksForPlaylist(playlistId);
-        } else if (token != null && !token.isEmpty()) {
+        } else if (token == null || token.isEmpty()) {
             throw new MissingTokenException("Missing Token.");
         } else {
             throw new InvalidTokenException("Wrong Token.");
@@ -92,7 +91,7 @@ public class PlaylistServiceImpl implements IPlaylistService {
     public void removeTrackFromPlaylist(int playlistId, int trackId, String token) {
         if (iTokenDAO.getUsernameFromToken(token) != null) {
             trackDAO.removeTrackFromPlaylist(playlistId, trackId);
-        } else if (token != null && !token.isEmpty()) {
+        } else if (token == null || token.isEmpty()) {
             throw new MissingTokenException("Missing Token.");
         } else {
             throw new InvalidTokenException("Wrong Token.");
@@ -103,7 +102,7 @@ public class PlaylistServiceImpl implements IPlaylistService {
     public void addTrackToPlaylist(int playlistId, TrackDTO trackDTO, String token) {
         if (iTokenDAO.getUsernameFromToken(token) != null) {
             trackDAO.addTrackToPlaylist(playlistId, trackDTO);
-        } else if (token != null && !token.isEmpty()) {
+        } else if (token == null || token.isEmpty()) {
             throw new MissingTokenException("Missing Token.");
         } else {
             throw new InvalidTokenException("Wrong Token.");

@@ -26,12 +26,11 @@ public class TrackServiceImpl implements ITrackService {
         this.iTrackDAO = iTrackDAO;
     }
 
-
     @Override
     public TracksDTO getAllTracksNotInPlaylist(int playListId, String token) {
         if (iTokenDAO.getUsernameFromToken(token) != null) {
             return iTrackDAO.getAllTracksNotInPlaylist(playListId);
-        } else if (token != null && !token.isEmpty()) {
+        } else if (token == null || token.isEmpty()) {
             throw new MissingTokenException("MissingToken");
         } else {
             throw new InvalidTokenException("Wrong Token.");

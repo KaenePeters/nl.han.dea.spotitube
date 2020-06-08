@@ -1,6 +1,7 @@
 package nl.han.dea.persistence;
 
 import nl.han.dea.DTO.UserDTO;
+import nl.han.dea.exceptions.PersistenceException;
 import nl.han.dea.persistence.database.ConnectionFactory;
 
 import javax.enterprise.inject.Default;
@@ -29,7 +30,7 @@ public class UserDAO implements IUserDAO {
 
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new PersistenceException("Database connection error. Please try again later");
         }
         return user;
     }

@@ -24,7 +24,6 @@ import static org.mockito.Mockito.when;
 public class LoginResourceTest {
 
 
-    private String token = "1234";
     private UserDTO testUser = new UserDTO("testuser", "testpassword");
 
     @Mock
@@ -38,6 +37,7 @@ public class LoginResourceTest {
 
     @Test
     public void loginSucces() {
+        String token = "1234";
         when(authenticationService.login(any())).thenReturn(new TokenDTO(token, testUser.getUsername()));
 
         Response actualResult = sut.login(testUser);

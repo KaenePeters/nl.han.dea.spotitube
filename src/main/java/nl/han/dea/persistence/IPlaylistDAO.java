@@ -9,7 +9,7 @@ public interface IPlaylistDAO {
 
     PlaylistsDTO getPlaylistsForUsername(String username);
 
-    void editPlaylistById(String name, int playlistId);
+    void editPlaylistById(String playlistName, int playlistId);
 
     void deletePlaylist(int playlistId);
 
